@@ -107,6 +107,12 @@ Start the development API server:
 PYTHONPATH=src uv run uvicorn goa2.server.app:create_app --factory --reload
 ```
 
+Or run it in a container (saves/logs are bind-mounted from the host):
+
+```bash
+docker compose up --build
+```
+
 Run the step-engine demo:
 
 ```bash
